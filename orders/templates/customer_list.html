@@ -1,0 +1,7 @@
+<h1>Customers</h1>
+<a href="{% url 'add_customer' %}">Add New Customer</a>
+<ul>
+    {% for customer in customers %}
+        <li>{{ customer.first_name }} {{ customer.last_name}}</li>
+    {% endfor %}
+</ul>

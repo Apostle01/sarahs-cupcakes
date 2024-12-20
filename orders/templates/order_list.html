@@ -1,0 +1,7 @@
+<h1>Orders</h1>
+<a href="{% url 'add_order' %}">Add New Order</a>
+<ul>
+    {% for order in orders %}
+        <li>Order #{{ order.id }} by {{ order.customer }}</li>
+    {% endfor %}
+</ul>
